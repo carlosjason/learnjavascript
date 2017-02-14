@@ -2,9 +2,9 @@
 
 var fs = require('fs');
 
-fs.readFile('sample.png',function(err,data){
+fs.readFile('./fs/sample.png',function(err,data){
     if(err){
-        conosole.log(err);
+        console.log(err);
     }else{
         console.log(data);
         console.log(data.length + 'bytes');

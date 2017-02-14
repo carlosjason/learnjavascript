@@ -1,7 +1,7 @@
 'use strict';
 
 var fs = require('fs');
-var rs = fs.createReadStream('sample.txt', 'utf-8');
+var rs = fs.createReadStream('./stream/sample.txt', 'utf-8');
 
 rs.on('data', function(chunk){
     console.log('DATA:');
